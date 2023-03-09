@@ -16,3 +16,9 @@ apt -y install fbi
 fbi -vt 1 -noverbose -d /dev/fb8 /boot/boot.bmp
 
 con2fbmap 1 8
+
+
+cp /etc/network/interfaces /etc/network/interfaces.backup
+sudo nano /etc/network/interfaces
+
+iface eth0 inet dhcp
